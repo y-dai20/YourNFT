@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.form {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.errorMessage {
+  color: red;
+}

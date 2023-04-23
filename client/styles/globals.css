@@ -1,0 +1,8 @@
+.nftCardList {
+  /* display: flex; */
+}
+
+.nftCard {
+  flex: 1;
+  width: 100%;
+}

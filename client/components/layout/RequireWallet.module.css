@@ -1,0 +1,15 @@
+.wallet {
+  border-bottom: 2px solid black;
+}
+
+.wallet p {
+  margin: 1px 0;
+}
+
+.wallet p.title {
+  font-size: 1.2rem;
+}
+
+.connectWallet {
+  margin: auto;
+}
