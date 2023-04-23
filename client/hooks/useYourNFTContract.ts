@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import abi from "../utils/YourNFT.json";
 import { YourNFT as YourNFTType } from "../typechain-types";
 
-const CONTRACT_ADDRESS = "0x8d9f663C6A6d559B3e1CE1F6D55177c608a647c5";
+const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 const CONTRACT_ABI = abi.abi;
 
 type PropsUseYourNFTContract = {

@@ -16,8 +16,7 @@ type Input = {
 export default function MintIpfsNFTForm({ mintIpfsNFT }: Props) {
   const [imageURLValue, setImageURLValue] = useState<string>("");
 
-  const WEB3_STORAGE_API_KEY =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDZlMjg1ZmI4YzQyNjkxRkYxNTcxMzkyRTk2Y2UzZDFFNDgwY0I4QUYiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODE5OTc0NjAwNjcsIm5hbWUiOiJZb3VyTkZUIn0.EZaQw0yKqPvAupNOHdkewkED7oE22C2SAUmWH5wxDMY";
+  const WEB3_STORAGE_API_KEY = process.env.WEB3_STORAGE_API_KEY;
   async function imageToNFT(image: any) {
     const client = new Web3Storage({ token: WEB3_STORAGE_API_KEY });
     console.log(image);
